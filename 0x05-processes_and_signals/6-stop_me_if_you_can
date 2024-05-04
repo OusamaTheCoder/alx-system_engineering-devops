@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 # This script stops the 4-to_infinity_and_beyond process
 
-stop_process() {
-    echo "Process terminated"
-    exit 0
-}
+pkill -f 4-to_infinity_and_beyond
+# stop_process() {
+#     echo "Process terminated"
+#     exit 0
+# }
 
-trap stop_process SIGINT
+# trap stop_process SIGINT
 
-while true; do
-    echo "To infinity and beyond"
-    sleep 1
-done
+# while true; do
+#     echo "To infinity and beyond"
+#     sleep 1
+# done
