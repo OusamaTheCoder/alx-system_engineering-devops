@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # This script kills the process 7-highlander
 
-if pkill -f -SIGKILL 7-highlander; then
-    echo "Killed"
-else
-    echo "Process not found"
-fi
+pkill -f -SIGKILL 7-highlander
+# if pkill -f -SIGKILL 7-highlander; then
+#     echo "Killed"
+# else
+#     echo "Process not found"
+# fi
