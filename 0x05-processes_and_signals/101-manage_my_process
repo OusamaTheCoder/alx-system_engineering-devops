@@ -22,8 +22,13 @@ stop() {
 }
 
 restart() {
-    stop
-    start
+    if [ -f /var/run/my_process.pid ]; then
+        stop
+        start
+        echo "manage_my_process restarted"
+    else
+        start
+    fi
 }
 
 case "$1" in
