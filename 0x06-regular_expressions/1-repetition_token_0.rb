@@ -19,8 +19,8 @@ if ARGV.length != 1
   exit 1
 end
 
-regex = /ho*/
+regex = /hbt{2,5}n/
 
 matches = ARGV[0].scan(regex)
 
-puts matches.join(',')
+puts matches.join
