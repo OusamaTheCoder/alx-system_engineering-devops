@@ -9,4 +9,4 @@ regex = /\[from:(.*?)\]\s\[to:(.*?)\]\s\[flags:(.*?)\]/
 
 matches = ARGV[0].scan(regex)
 
-puts matches.join
+puts matches.join(',')
